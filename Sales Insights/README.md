@@ -1,5 +1,5 @@
 
-# Sales Insight
+# Sales Insight Using Tableau
 
 This is inspired from Youtube Channel Codebasics Project.
 

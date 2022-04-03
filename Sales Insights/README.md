@@ -1,39 +1,51 @@
+## Sales Insights Data Analysis Project
 
-# Sales Insight Using Tableau
+### Instructions to setup mysql on your local computer
 
-This is inspired from Youtube Channel Codebasics Project.
+1. Follow step in this video to install mysql on your local computer
+https://www.youtube.com/watch?v=WuBcTJnIuzo
+
+1. SQL database dump is in db_dump.sql file above. Download `db_dump.sql` file to your local computer and import it as per instructions given in the tutorial video
+
+### Data Analysis Using SQL
+
+1. Show all customer records
+
+    `SELECT * FROM customers;`
+
+1. Show total number of customers
+
+    `SELECT count(*) FROM customers;`
+
+1. Show transactions for Chennai market (market code for chennai is Mark001
+
+    `SELECT * FROM transactions where market_code='Mark001';`
+
+1. Show distrinct product codes that were sold in chennai
+
+    `SELECT distinct product_code FROM transactions where market_code='Mark001';`
+
+1. Show transactions where currency is US dollars
+
+    `SELECT * from transactions where currency="USD"`
+
+1. Show transactions in 2020 join by date table
+
+    `SELECT transactions.*, date.* FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020;`
+
+1. Show total revenue in year 2020,
+
+    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";`
+	
+1. Show total revenue in year 2020, January Month,
+
+    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");`
+
+1. Show total revenue in year 2020 in Chennai
+
+    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020
+and transactions.market_code="Mark001";`
 
 
-## What can you learn
 
-In this project we will practice real life use case of predicting sales insight
-
-## 🚀 About Me
-Hello, my name is Bhargava Krishna. I'm a Mechanical Engineer and the founder of BK Enginering.
-We provide training in engineering skills (IT & non-IT).
-
-Educator | Entrepreneur | Mechanical Engineer | Consultant
-
-Linkedin: https://www.linkedin.com/in/bhargava-krishna-marripati/
-
-
-
-## 🛠 Skills
-**Mechanical:** Solidworks, CATIA, NX, Creo, Inventor, Fusion, Ansys, Hypermesh  
-**Programming Languages:** Python, C, C++   
-**Database:** MySQL      
-**Data Visualization:** Tableay, Power BI
-
-
-
-
-## 🔗 BK Engineering Links
-[![instagram](https://img.shields.io/badge/instagram-bc2a8d?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/bkengineering.in/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/72715539)
-[![portfolio](https://img.shields.io/badge/Youtube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCqclJtSAATdLqwaLxB0qw0g)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/bkengineeringin)
-[![website](https://img.shields.io/badge/website-000?style=for-the-badge&logo=web&logoColor=white)](https://bk-engineering.in/)
-## Acknowledgements
-
- - [YouTube Playlist Link](https://www.youtube.com/playlist?list=PLeo1K3hjS3usDI9XeUgjNZs6VnE0meBrL)
 

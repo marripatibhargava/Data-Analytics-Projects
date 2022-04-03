@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)https://public.tableau.com/app/profile/bhargava.krishna.marripati/viz/Covid19Analysis-India_16489715864200/Dashboard2 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./Covid 19 Analysis - India _ Tableau Public_files/35f2b5d0eb"></script><script src="./Covid 19 Analysis - India _ Tableau Public_files/nr-spa-1173.min.js.download"></script><script type="text/javascript" async="" src="./Covid 19 Analysis - India _ Tableau Public_files/analytics.js.download"></script><script async="" src="./Covid 19 Analysis - India _ Tableau Public_files/gtm.js.download"></script><script src="./Covid 19 Analysis - India _ Tableau Public_files/gtm.js(1).download" type="text/javascript"></script><script type="text/javascript">addGTMLibrary&&"function"==typeof addGTMLibrary&&addGTMLibrary("GTM-WP98PN")</script><link rel="icon" href="https://public.tableau.com/app/favicon.ico"><script src="./Covid 19 Analysis - India _ Tableau Public_files/newrelic.js.download" type="text/javascript"></script><script type="text/javascript">addNewRelicPlugin&&"function"==typeof addNewRelicPlugin&&addNewRelicPlugin("35f2b5d0eb","482479497")</script><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="origin-when-cross-origin"><script defer="defer" src="./Covid 19 Analysis - India _ Tableau Public_files/main.fb30a163.js.download"></script><link href="./Covid 19 Analysis - India _ Tableau Public_files/main.d316a006.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./Covid 19 Analysis - India _ Tableau Public_files/393.163cd833.chunk.css"><link rel="stylesheet" type="text/css" href="./Covid 19 Analysis - India _ Tableau Public_files/678.aaaf9ca4.chunk.css"><title>Covid 19 Analysis - India | Tableau Public</title><style data-react-tooltip="true">.__react_component_tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: -999em;
+  opacity: 0;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  top: -999em;
+  visibility: hidden;
+  z-index: 999;
+}
+.__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+  pointer-events: auto;
+}
+.__react_component_tooltip::before, .__react_component_tooltip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.__react_component_tooltip.show {
+  opacity: 0.9;
+  margin-top: 0;
+  margin-left: 0;
+  visibility: visible;
+}
+.__react_component_tooltip.place-top::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-bottom::before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-left::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  right: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-right::before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  left: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip .multi-line {
+  display: block;
+  padding: 2px 0;
+  text-align: center;
+}</style><link rel="canonical" href="https://public.tableau.com/app/profile/bhargava.krishna.marripati/viz/Covid19Analysis-India_16489715864200/Dashboard2" data-rh="true"><meta name="description" content="Covid 19 Analysis - India" data-rh="true"><meta name="robots" content="index" data-rh="true"><meta property="og:image:width" content="787" data-rh="true"><meta property="og:image:height" content="485" data-rh="true"><meta property="og:title" content="Covid 19 Analysis - India" data-rh="true"><meta property="og:image" content="https://public.tableau.com/static/images/Co/Covid19Analysis-India_16489715864200/Dashboard2/4_3_hd.png" data-rh="true"><meta property="og:description" content="Covid 19 Analysis - India" data-rh="true"><meta property="og:url" content="https://public.tableau.com/app/profile/bhargava.krishna.marripati/viz/Covid19Analysis-India_16489715864200/Dashboard2" data-rh="true"><meta property="og:site_name" content="Tableau Public" data-rh="true"><meta name="twitter:card" content="summary_large_image" data-rh="true"><meta name="twitter:site" content="@tableaupublic" data-rh="true"><meta name="twitter:title" content="Covid 19 Analysis - India" data-rh="true"><meta name="twitter:description" content="Covid 19 Analysis - India" data-rh="true"><meta name="twitter:image" content="https://public.tableau.com/static/images/Co/Covid19Analysis-India_16489715864200/Dashboard2/4_3_hd.png" data-rh="true"></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWJLRPD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><noscript>You need to enable JavaScript to run this app.</noscript><script src="./Covid 19 Analysis - India _ Tableau Public_files/polyfill.min.js.download"></script><div id="root"><div class="app_app__aK5im"><header class="Header_header__OKWO7"><div class="Header_navBar__R6DIw"><div class="Header_left__AgymK"><button class="Header_menuButton__EC8-e" type="button" tabindex="0" aria-label="Open navigation menu" aria-haspopup="true" aria-expanded="false"><i aria-hidden="true"></i></button><a href="https://public.tableau.com/" class="Header_menuTitle__LVwJi" location="//public.tableau.com/"><img class="Header_logo__shVBB" alt="Logo" src="data:image/png;base64,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"></a></div><div class="Header_right__sCxx3"><div class="Header_horizontal__ncxq4 Header_menu__iSxy+"><a class="Header_menuLink__XQyg6" location="/discover" data-testid="Header-menuLink-discover" href="https://public.tableau.com/app/discover">Discover</a><a href="https://public.tableau.com/en-us/s/blog" class="Header_menuLink__XQyg6" location="//public.tableau.com/en-us/s/blog" data-testid="Header-menuLink-blog">Blog</a><a href="https://public.tableau.com/en-us/s/resources" class="Header_menuLink__XQyg6" location="//public.tableau.com/en-us/s/resources" data-testid="Header-menuLink-resources">Resources</a><a href="https://public.tableau.com/en-us/s/about" class="Header_menuLink__XQyg6" location="//public.tableau.com/en-us/s/about" data-testid="Header-menuLink-about">About</a><div role="button" class="Header_userAvatarButton__zvaXQ" aria-label="Toggle user options menu" tabindex="0" aria-haspopup="true" aria-expanded="false"><img class="Avatar_userAvatar__xn8Gf" src="./Covid 19 Analysis - India _ Tableau Public_files/5fc65df9-89a4-4528-9e58-90a247993bee.jpeg" alt="bhargava.krishna.marripati"></div></div><a location="/search/all" aria-label="Go to search" href="https://public.tableau.com/app/search/all"><i class="Header_searchIcon__YhKi0" aria-hidden="true"></i></a></div></div></header><div class="Toastify"></div><div class="app_content__gh+4b"><div class="VizHomeHeader_homeHeaderContainer__CKAxI"><div class="VizHomeHeader_homeHeader__KEUFr"><div class="VizHomeHeader_title__-xLyW"><h1>Covid 19 Analysis - India</h1> by <a location="/profile/bhargava.krishna.marripati" data-testid="VizHomeHeader-titleLink" href="https://public.tableau.com/app/profile/bhargava.krishna.marripati">Bhargava Krishna Marripati</a></div><div class="VizHomeHeader_vizControlBar__hf3ud"><button class="Button_tile__gjT7e" type="button" aria-label="Edit" data-tip="Edit" data-for="vizhome-web-edit-tooltip" aria-disabled="false" currentitem="false"><i id="webEditAuthorIcon" data-testid="webEditAuthorIcon" class="Button_webEditAuthorIcon__wmzUM" aria-hidden="true"></i></button><div class="__react_component_tooltip t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0 place-bottom type-dark" id="vizhome-web-edit-tooltip" data-id="tooltip"><style aria-hidden="true">
+  	.t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-top {
+        margin-top: -10px;
+    }
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-bottom {
+        margin-top: 10px;
+    }
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-left {
+        margin-left: -10px;
+    }
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-right {
+        margin-left: 10px;
+    }
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t8aa31805-5d80-4c99-a6f2-4f1fa8751cc0.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div><button type="button" data-tip="Add Favorite" aria-describedby="favorite-button" data-for="favorite-button" aria-label="Favorite button" class="Button_tile__gjT7e" tabindex="0" currentitem="false"><i class="Favorite_favoriteUnselectedIcon__wVivj button_button__WpmSL"></i></button><div class="__react_component_tooltip t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e place-bottom type-dark" id="favorite-button" data-id="tooltip"><style aria-hidden="true">
+  	.t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-top {
+        margin-top: -10px;
+    }
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-bottom {
+        margin-top: 10px;
+    }
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-left {
+        margin-left: -10px;
+    }
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-right {
+        margin-left: 10px;
+    }
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t6c918d63-2b0d-4d66-a6c0-5c58f85a8a2e.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div><button type="button" data-tip="Share" aria-labelledby="vizhome-share-tooltip" data-for="vizhome-share-tooltip" class="Button_tile__gjT7e" tabindex="0" currentitem="false"><i id="shareIcon" data-testid="shareIcon" class="Button_shareIcon__mF1ld" aria-hidden="true"></i></button><div class="__react_component_tooltip ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91 place-bottom type-dark" id="vizhome-share-tooltip" data-id="tooltip"><style aria-hidden="true">
+  	.ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-top {
+        margin-top: -10px;
+    }
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-bottom {
+        margin-top: 10px;
+    }
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-left {
+        margin-left: -10px;
+    }
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-right {
+        margin-left: 10px;
+    }
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .ta1a2b78b-b7bf-4d0d-88ed-9bb38fe12a91.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div><button type="button" data-tip="Download" aria-labelledby="vizhome-download-tooltip" data-for="vizhome-download-tooltip" class="Button_tile__gjT7e" tabindex="0" aria-disabled="false" currentitem="false"><i id="downloadIcon" data-testid="downloadIcon" class="Button_downloadIcon__jnqfe" aria-hidden="true"></i></button><div class="__react_component_tooltip t1175e983-cd00-43d7-b733-cb0dfdfdc611 place-bottom type-dark" id="vizhome-download-tooltip" data-id="tooltip"><style aria-hidden="true">
+  	.t1175e983-cd00-43d7-b733-cb0dfdfdc611 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-top {
+        margin-top: -10px;
+    }
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-bottom {
+        margin-top: 10px;
+    }
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-left {
+        margin-left: -10px;
+    }
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-right {
+        margin-left: 10px;
+    }
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t1175e983-cd00-43d7-b733-cb0dfdfdc611.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div><a href="https://public.tableau.com/en-us/s/nominate-a-viz" location="//public.tableau.com/en-us/s/nominate-a-viz" class="Button_tile__gjT7e Button_nominateVizLink__hwy9v" aria-label="Nominate" data-tip="Nominate" data-for="vizhome-nominate-viz-tooltip" target="_blank" currentitem="false"><i class="Button_nominateVizIcon__fCJP+" aria-hidden="true"></i></a><div class="__react_component_tooltip t0ba20486-6bf4-4802-85e9-788df67e0f6f place-bottom type-dark" id="vizhome-nominate-viz-tooltip" data-id="tooltip"><style aria-hidden="true">
+  	.t0ba20486-6bf4-4802-85e9-788df67e0f6f {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-top {
+        margin-top: -10px;
+    }
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-bottom {
+        margin-top: 10px;
+    }
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-left {
+        margin-left: -10px;
+    }
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-right {
+        margin-left: 10px;
+    }
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t0ba20486-6bf4-4802-85e9-788df67e0f6f.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div><button type="button" data-tip="Settings" aria-labelledby="vizhome-settings-tooltip" data-for="vizhome-settings-tooltip" class="Button_tile__gjT7e" tabindex="0" currentitem="false"><i id="settingsIcon" data-testid="settingsIcon" class="Button_settingsIcon__7jLj0" aria-hidden="true"></i></button><div class="__react_component_tooltip t0d29c53e-a319-41bd-9300-003ff857e611 place-bottom type-dark" id="vizhome-settings-tooltip" data-id="tooltip"><style aria-hidden="true">
+  	.t0d29c53e-a319-41bd-9300-003ff857e611 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t0d29c53e-a319-41bd-9300-003ff857e611.place-top {
+        margin-top: -10px;
+    }
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-bottom {
+        margin-top: 10px;
+    }
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-left {
+        margin-left: -10px;
+    }
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-right {
+        margin-left: 10px;
+    }
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t0d29c53e-a319-41bd-9300-003ff857e611.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></div><div class="VizHomeHeader_mobileVizControlBar__mG-56"><button type="button" title="Expand" class="Button_tile__gjT7e" tabindex="0"><i aria-hidden="true" data-testid="expandIcon" class="Button_expandIcon__WN5q4"></i></button></div></div></div><div class="VizContainer_container__0uJBG"><div class="TableauJSApiViz_embeddedVizWrapper__WQG8r"><iframe frameborder="0" allowtransparency="true" allowfullscreen="true" title="Data Visualization" marginheight="0" marginwidth="0" scrolling="no" style="display: block; width: 1920px; height: 1107px; visibility: visible;" src="./Covid 19 Analysis - India _ Tableau Public_files/Dashboard2.html"></iframe></div></div><div class="VizDetails_container__4e2QS"><h2><span class="VizDetails_title__kKO3n">Details </span><button class="VizDetails_editDetailsButton__kP4Ce" type="button" aria-label="Edit Details" data-tip="Edit Details" data-for="vizhome-edit-details-tooltip" currentitem="false"><i data-testid="vizhome-edit-details-icon" aria-hidden="true"></i></button><div class="__react_component_tooltip t9ab27692-bc61-45c1-b499-45f6e8ca3ee4 place-bottom type-dark" id="vizhome-edit-details-tooltip" data-id="tooltip"><style aria-hidden="true">
+  	.t9ab27692-bc61-45c1-b499-45f6e8ca3ee4 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-top {
+        margin-top: -10px;
+    }
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-bottom {
+        margin-top: 10px;
+    }
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-left {
+        margin-left: -10px;
+    }
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-right {
+        margin-left: 10px;
+    }
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .t9ab27692-bc61-45c1-b499-45f6e8ca3ee4.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div></h2><div class="VizDetails_stats__v5hJj"><div class="VizDetails_vizStats__bQ7nf"><button class="Favorite_favoriteCount__MfM0u" data-testid="favorite-button" type="button" aria-checked="false" role="checkbox" tabindex="0" data-tip="Add Favorite" aria-label="Add Favorite" data-for="favoriteIcon-tooltip-Covid19Analysis-India_16489715864200" currentitem="false"><i class="Favorite_favoriteUnselectedIcon__wVivj button_button__WpmSL"></i>0</button><div class="__react_component_tooltip tf97c7d6f-4d76-454a-948d-454ffea06842 place-bottom type-dark" id="favoriteIcon-tooltip-Covid19Analysis-India_16489715864200" data-id="tooltip"><style aria-hidden="true">
+  	.tf97c7d6f-4d76-454a-948d-454ffea06842 {
+	    color: #fff;
+	    background: #222;
+	    border: 1px solid transparent;
+  	}
+
+  	.tf97c7d6f-4d76-454a-948d-454ffea06842.place-top {
+        margin-top: -10px;
+    }
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-top::before {
+        border-top: 8px solid transparent;
+    }
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: #222;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-bottom {
+        margin-top: 10px;
+    }
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-bottom::before {
+        border-bottom: 8px solid transparent;
+    }
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: #222;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-left {
+        margin-left: -10px;
+    }
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-left::before {
+        border-left: 8px solid transparent;
+    }
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: #222;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-right {
+        margin-left: 10px;
+    }
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-right::before {
+        border-right: 8px solid transparent;
+    }
+    .tf97c7d6f-4d76-454a-948d-454ffea06842.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: #222;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style></div><span class="ViewCount_viewCount__fnCQf" data-tip="3 Views" aria-label="3 Views" data-for="viewCount-tooltip-Covid19Analysis-India_16489715864200" tabindex="0" currentitem="true"><i class="ViewCount_viewCountIcon__bIM1B" data-testid="view-count-icon"></i>3</span><div class="__react_component_tooltip t69a40999-2041-4412-95c0-ebbd0206464d border place-bottom type-custom Tooltip_tooltip__BYrDh" id="viewCount-tooltip-Covid19Analysis-India_16489715864200" data-id="tooltip" style="left: 89px; top: 272px;"><style aria-hidden="true">
+  	.t69a40999-2041-4412-95c0-ebbd0206464d {
+	    color: #292b2c;
+	    background: #fff;
+	    border: 1px solid #d4d4d4;
+  	}
+
+  	.t69a40999-2041-4412-95c0-ebbd0206464d.place-top {
+        margin-top: -10px;
+    }
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-top::before {
+        border-top: 8px solid #d4d4d4;
+    }
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-top::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        bottom: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 6px;
+    }
+
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-bottom {
+        margin-top: 10px;
+    }
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-bottom::before {
+        border-bottom: 8px solid #d4d4d4;
+    }
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-bottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        top: -6px;
+        left: 50%;
+        margin-left: -8px;
+        border-bottom-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-width: 6px;
+    }
+
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-left {
+        margin-left: -10px;
+    }
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-left::before {
+        border-left: 8px solid #d4d4d4;
+    }
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-left::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        right: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-left-color: transparent;
+        border-left-style: solid;
+        border-left-width: 6px;
+    }
+
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-right {
+        margin-left: 10px;
+    }
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-right::before {
+        border-right: 8px solid #d4d4d4;
+    }
+    .t69a40999-2041-4412-95c0-ebbd0206464d.place-right::after {
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: 50%;
+        margin-top: -4px;
+        border-right-color: transparent;
+        border-right-style: solid;
+        border-right-width: 6px;
+    }
+  </style>3 Views</div></div><div class="VizDetails_statBlocBreak__1ao7D"></div></div><div class="VizDetails_columns__VTrM2"><div class="VizDetails_column__UTu4u"><p class="VizDetails_description__dSjlS">Covid 19 Analysis - India </p><div class="VizDetails_linkRow__y03tM"><span><strong>Published:</strong> Apr 3, 2022</span><span><strong>Updated:</strong> Apr 3, 2022</span></div></div><div class="VizDetails_column__UTu4u"></div></div></div></div><footer class="Footer_container__iICw7"><div class="Footer_flex__4WLkT"><div class="Footer_general__K+uQY"><a href="https://www.tableau.com/en-us" location="//www.tableau.com/en-us"><img alt="tableau logo" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAB7BAMAAABa7+NeAAAAD1BMVEUAAAD///////////////+PQt5oAAAABXRSTlMA/gCbXFS6KSsAAAR6SURBVHhe7dxhdps6EAVgvyUM6gYAbUCIDXjQ/tfUR0t60woJzakDdn3vn5AIsPwdRSaMwq2e/6QbPsLc6s09sYhFLGIR6zVCLGIRi1jEItYY/08Qt36Z82ZieZFvw5a7IJ9/OJ0DQCxiESuf4IlFrDzEIhaxiEUsYhGLWMRKKSmx2jIKuvsMWD5pIxaxEGARK/3MIuK2Tf1dcdshiMzb5vtiSZbuj7kry7+PRSxiEcujUvJcWHGLiNu2pqzUs0awwzkD5z0uHXzL5TWxMMt152ARi1jEIhY+vbURi1giQixiEeuvQyxiEYtYxFri/K5Yd7FiBai+G1awYxFrSEmrWD4lfRzWEkSiDne45hY+irjZirUeFVMF4OO0IiL7hW6UtTYaBRZSwEIehOWD/Mi8Yk37Fm6Rn1ET1naUQ0NhB93B6gWnBWZIQa/D8vKRUMZC1IC16te0cGrXijVOaeiuwwqCNGC5VixQFHvgBWnE6se5Wy7DGsWGJV0zVmFAIsGOtYza9ZdhBSuWtGL1ghRHnh1LpsuwRjFjdY1YBQnkLg8eWejOZMDyUorudzimeIQVEz7bjrFwWAw48Z6mm5dgmLMWned9rCB5XAPWKKVMex12ugKHGpZT9OcYC+NGt/ai5owriBYs/20Yp9tWaI5r9AgrHz1GLEBguPkiFl4U4AdY2HVzczua0BhbsYbRueGWvaNTsPrPk9Ad7QUL7F/DAr3Dtux/tCgwjrG2nI8FH9F2rAEEJSwIgn53zAowXgMrQP8QC7oHWBiDeJl8PHoImrHsE/zn5TazGQt96CxY/TEWVEFc+OUVfSDWgiVIErfMLZcO8VdWb4dvNceaDFh4i1UsDKb8fWfsdqzTL0ox76kFy7diyW8pYLmXwxoMWBiLZixX+D19GazxWbCIRazQhuXfFMs/+cjyJxUs/NdiaQb/FVjj15fCgKWPxKqg1iz8P4cF3kdhub/B8uk8LLwlAxZmOcMVfMN8acdCxrMWhgRANGHZ/zasY+lrYMHHtWFB19nuOuSBT9eI5a/FQqtM7VheANN0P6uS7H5T5Q7teDkWbo83Y92td0pBvl/cmepYkn0aXIEFCAhVsFx2y76ChekQ9osr1BW1iOWBibn1Iiz0AiWWEtZW3VkspbAeZx58EFeq16V1c8mwMD9ifrsaqxekjGUvsuKwGCOIq4W+QvkHVbqrsQY7lhaw6hbOVr5Hu4sRzXUsrOsavgarN2GB5RhrrGGBE6m3d0WsE/8rLBix2pcc3StY4ETq7cMzYHkblrZj+QoWOJFq+3Q1Vo4xl9YyArMRC1o40H7qgI5dioX4uEmgUFbgcmpbgOtDdmBhDzcX1wZvh+dYKPaJ+VEFdiwkLXPSKui6h2VpNyqYEqNWzxyrr+1T4hNDjCEWsYj1Gs+i0d0VHwELRd4I6/GXDsS6i3v1R28SCyEWsYhFLGIRi1jEIhaxiIUHdQdxaU0di1jyOedgEYtYxEJyrGqIlbIJvhRi4dLhFUMsYhGLWAyxiEUsYhGLWMx3Bkx0WENiWDoAAAAASUVORK5CYII="></a><p>© 2022 Tableau Software, LLC, a Salesforce Company. <br>All Rights Reserved.</p></div><div class="Footer_navigation__vr48y"><nav aria-labelledby="products"><h3 id="products">Products</h3><a href="https://www.tableau.com/en-us/products/desktop" class="Footer_link__sgKeT" target="_blank" rel="noopener noreferrer" location="https://www.tableau.com/en-us/products/desktop">Tableau Desktop</a><a href="https://www.tableau.com/en-us/products/server" class="Footer_link__sgKeT" target="_blank" rel="noopener noreferrer" location="https://www.tableau.com/en-us/products/server">Tableau Server</a><a href="https://www.tableau.com/en-us/products/online" class="Footer_link__sgKeT" target="_blank" rel="noopener noreferrer" location="https://www.tableau.com/en-us/products/online">Tableau Online</a><a href="https://www.tableau.com/en-us/products/prep" class="Footer_link__sgKeT" target="_blank" rel="noopener noreferrer" location="https://www.tableau.com/en-us/products/prep">Tableau Prep</a><a href="https://public.tableau.com/s/download" class="Footer_link__sgKeT Footer_publicDownload__jwBcb" location="//public.tableau.com/s/download">Tableau Public <span class="orangeBadge">Free</span></a></nav><nav aria-labelledby="legal"><h3 id="legal">Legal</h3><a href="https://www.tableau.com/en-us/privacy" class="Footer_link__sgKeT" target="_blank" rel="noopener noreferrer" location="https://www.tableau.com/en-us/privacy">Privacy Policy</a><a href="https://public.tableau.com/s/data-policy" class="Footer_link__sgKeT" location="//public.tableau.com/s/data-policy">Data Policy</a><a href="https://www.tableau.com/en-us/tos" class="Footer_link__sgKeT" target="_blank" rel="noopener noreferrer" location="https://www.tableau.com/en-us/tos">Terms of Service</a><a href="https://www.tableau.com/en-us/ip" class="Footer_link__sgKeT" target="_blank" rel="noopener noreferrer" location="https://www.tableau.com/en-us/ip">Patents &amp; IP</a><a href="https://www.tableau.com/en-us/do-not-sell-my-personal-information" class="Footer_link__sgKeT" target="_blank" rel="noopener noreferrer" location="https://www.tableau.com/en-us/do-not-sell-my-personal-information">Do Not Sell My Personal Information</a></nav><nav aria-labelledby="about"><h3 id="about">About</h3><a href="https://public.tableau.com/s/about" class="Footer_link__sgKeT" location="//public.tableau.com/s/about">What is Tableau Public?</a><a href="https://trust.tableau.com/" class="Footer_link__sgKeT" target="_blank" rel="noopener noreferrer" location="https://trust.tableau.com">Current Status</a><a href="https://public.tableau.com/s/faq" class="Footer_link__sgKeT" location="//public.tableau.com/s/faq">FAQ</a><a href="http://careers.tableau.com/" class="Footer_link__sgKeT" target="_blank" rel="noopener noreferrer" location="http://careers.tableau.com">Careers</a><a href="https://public.tableau.com/s/contact-us" class="Footer_link__sgKeT" location="//public.tableau.com/s/contact-us">Contact Us</a></nav></div><div class="Footer_social__MfQNF"><a href="https://www.twitter.com/tableaupublic" target="_blank" rel="noopener noreferrer" location="https://www.twitter.com/tableaupublic"><i class="Footer_socialIconTwitter__YdCpD" role="button" aria-label="Twitter link"></i></a><a href="https://www.facebook.com/TableauPublic" target="_blank" rel="noopener noreferrer" location="https://www.facebook.com/TableauPublic"><i class="Footer_socialIconFacebook__F+nBr" role="button" aria-label="Facebook link"></i></a><a href="https://www.linkedin.com/company/tableau-software" target="_blank" rel="noopener noreferrer" location="https://www.linkedin.com/company/tableau-software"><i class="Footer_socialIconLinkedin__cE-mZ" role="button" aria-label="Linkedin link"></i></a></div></div><div class="LocaleSwitcher_localeSwitcher__Mq7kb"><select aria-label="locale switcher"><option value="de-DE">Deutsch</option><option value="en-GB">English (UK)</option><option value="en-US">English</option><option value="es-ES">Español</option><option value="fr-FR">Français</option><option value="it-IT">Italiano</option><option value="pt-BR">Português</option><option value="ja-JP">日本語</option><option value="ko-KR">한국어</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option></select></div></footer></div></div><span style="border-radius: 10px !important; text-indent: 12px !important; width: auto !important; height: 20px !important; padding: 0px 8px !important; text-align: center !important; vertical-align: middle !important; font: bold 11px / 20px &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important; color: rgb(255, 255, 255) !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNFNjAwMjMiPjwvY2lyY2xlPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNkMwIDguNTYxNSAxLjYwNTUgMTAuNzQ4NSAzLjg2NSAxMS42MDlDMy44MSAxMS4xNDA1IDMuNzUxNSAxMC4zNjggMy44Nzc1IDkuODI2QzMuOTg2IDkuMzYgNC41NzggNi44NTcgNC41NzggNi44NTdDNC41NzggNi44NTcgNC4zOTk1IDYuNDk5NSA0LjM5OTUgNS45N0M0LjM5OTUgNS4xNCA0Ljg4MDUgNC41MiA1LjQ4IDQuNTJDNS45OSA0LjUyIDYuMjM2IDQuOTAyNSA2LjIzNiA1LjM2MUM2LjIzNiA1Ljg3MzUgNS45MDk1IDYuNjM5NSA1Ljc0MSA3LjM1QzUuNjAwNSA3Ljk0NDUgNi4wMzk1IDguNDI5NSA2LjYyNTUgOC40Mjk1QzcuNjg3IDguNDI5NSA4LjUwMzUgNy4zMSA4LjUwMzUgNS42OTRDOC41MDM1IDQuMjYzNSA3LjQ3NTUgMy4yNjQgNi4wMDggMy4yNjRDNC4zMDkgMy4yNjQgMy4zMTE1IDQuNTM4NSAzLjMxMTUgNS44NTZDMy4zMTE1IDYuMzY5NSAzLjUwOSA2LjkxOTUgMy43NTYgNy4yMTlDMy44MDQ1IDcuMjc4NSAzLjgxMiA3LjMzIDMuNzk3NSA3LjM5MDVDMy43NTIgNy41Nzk1IDMuNjUxIDcuOTg1IDMuNjMxNSA4LjA2OEMzLjYwNSA4LjE3NyAzLjU0NSA4LjIwMDUgMy40MzE1IDguMTQ3NUMyLjY4NTUgNy44MDA1IDIuMjE5NSA2LjcxIDIuMjE5NSA1LjgzNEMyLjIxOTUgMy45NDk1IDMuNTg4IDIuMjE5NSA2LjE2NTUgMi4yMTk1QzguMjM3NSAyLjIxOTUgOS44NDggMy42OTYgOS44NDggNS42NjlDOS44NDggNy43Mjc1IDguNTUwNSA5LjM4NDUgNi43NDg1IDkuMzg0NUM2LjE0MyA5LjM4NDUgNS41NzQ1IDkuMDY5NSA1LjM3OTUgOC42OThDNS4zNzk1IDguNjk4IDUuMDggOS44MzkgNS4wMDc1IDEwLjExOEM0Ljg2NjUgMTAuNjYgNC40NzU1IDExLjM0NiA0LjIzMyAxMS43MzU1QzQuNzkyIDExLjkwNzUgNS4zODUgMTIgNiAxMkM5LjMxMzUgMTIgMTIgOS4zMTM1IDEyIDZDMTIgMi42ODY1IDkuMzEzNSAwIDYgMEMyLjY4NjUgMCAwIDIuNjg2NSAwIDZaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 4px 50% / 12px 12px no-repeat rgb(230, 0, 35) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; -webkit-font-smoothing: antialiased !important; top: 636px; left: 71px;">Save</span><span style="border-radius: 12px; width: 24px !important; height: 24px !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iMTEiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuOCI+PC9jaXJjbGU+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUuMDgzNCA0LjU4MzMzSDEzLjMzMzRWNS43NDk5OUgxNS4wODM0QzE1LjcyNjggNS43NDk5OSAxNi4yNSA2LjI3MzI0IDE2LjI1IDYuOTE2NjZWOC42NjY2NkgxNy40MTY3VjYuOTE2NjZDMTcuNDE2NyA1LjYyOTgzIDE2LjM3MDIgNC41ODMzMyAxNS4wODM0IDQuNTgzMzNaTTE2LjI1IDE1LjA4MzNDMTYuMjUgMTUuNzI2NyAxNS43MjY4IDE2LjI1IDE1LjA4MzQgMTYuMjVIMTMuMzMzNFYxNy40MTY3SDE1LjA4MzRDMTYuMzcwMiAxNy40MTY3IDE3LjQxNjcgMTYuMzcwMiAxNy40MTY3IDE1LjA4MzNWMTMuMzMzM0gxNi4yNVYxNS4wODMzWk01Ljc1MDA0IDE1LjA4MzNWMTMuMzMzM0g0LjU4MzM3VjE1LjA4MzNDNC41ODMzNyAxNi4zNzAyIDUuNjI5ODcgMTcuNDE2NyA2LjkxNjcxIDE3LjQxNjdIOC42NjY3MVYxNi4yNUg2LjkxNjcxQzYuMjczMjkgMTYuMjUgNS43NTAwNCAxNS43MjY3IDUuNzUwMDQgMTUuMDgzM1pNNS43NTAwNCA2LjkxNjY2QzUuNzUwMDQgNi4yNzMyNCA2LjI3MzI5IDUuNzQ5OTkgNi45MTY3MSA1Ljc0OTk5SDguNjY2NzFWNC41ODMzM0g2LjkxNjcxQzUuNjI5ODcgNC41ODMzMyA0LjU4MzM3IDUuNjI5ODMgNC41ODMzNyA2LjkxNjY2VjguNjY2NjZINS43NTAwNFY2LjkxNjY2Wk05LjI1MDA0IDEwLjcwODNDOS4yNTAwNCA5LjkwNDQ5IDkuOTA0NTQgOS4yNDk5OSAxMC43MDg0IDkuMjQ5OTlDMTEuNTEyMiA5LjI0OTk5IDEyLjE2NjcgOS45MDQ0OSAxMi4xNjY3IDEwLjcwODNDMTIuMTY2NyAxMS41MTIyIDExLjUxMjIgMTIuMTY2NyAxMC43MDg0IDEyLjE2NjdDOS45MDQ1NCAxMi4xNjY3IDkuMjUwMDQgMTEuNTEyMiA5LjI1MDA0IDEwLjcwODNaTTEzLjYyNSAxNC41QzEzLjg0OSAxNC41IDE0LjA3MyAxNC40MTQ4IDE0LjI0NCAxNC4yNDM5QzE0LjU4NTIgMTMuOTAyMSAxNC41ODUyIDEzLjM0NzkgMTQuMjQ0IDEzLjAwNjFMMTMuMDcwMyAxMS44MzNDMTMuMjM0MiAxMS40OTA2IDEzLjMzMzQgMTEuMTEyNiAxMy4zMzM0IDEwLjcwODNDMTMuMzMzNCA5LjI2MTA4IDEyLjE1NTYgOC4wODMzMyAxMC43MDg0IDguMDgzMzNDOS4yNjExMiA4LjA4MzMzIDguMDgzMzcgOS4yNjEwOCA4LjA4MzM3IDEwLjcwODNDOC4wODMzNyAxMi4xNTU2IDkuMjYxMTIgMTMuMzMzMyAxMC43MDg0IDEzLjMzMzNDMTEuMTEyNiAxMy4zMzMzIDExLjQ5MDYgMTMuMjM0MiAxMS44MzMgMTMuMDcwMkwxMy4wMDYxIDE0LjI0MzlDMTMuMTc3IDE0LjQxNDggMTMuNDAxIDE0LjUgMTMuNjI1IDE0LjVaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 50% 50% / 24px 24px no-repeat rgba(0, 0, 0, 0.4) !important; position: absolute !important; opacity: 1 !important; z-index: 8675309 !important; display: none; cursor: pointer !important; border: none !important; top: 636px; left: 362px;"></span><script src="./Covid 19 Analysis - India _ Tableau Public_files/tableau-2.9.1.min.js.download" async=""></script></body></html>

@@ -6,7 +6,7 @@ This is inspired from Youtube Channel Simplilearn Project.
 
 ## What can you learn
 
-
+![Covid 19](https://user-images.githubusercontent.com/24194959/161413893-cc269dce-49a0-4736-8210-2f411ef4e40c.PNG)
 
 ## 🚀 About Me
 Hello, my name is Bhargava Krishna. I'm a Mechanical Engineer and the founder of BK Enginering.

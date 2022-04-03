@@ -1,5 +1,6 @@
 # Data-Analytics-Projects
 This contains the projects related to Data Analytics, Buisness Analytics, Visualization etc
+These are practice projects from multiple sources available for free online.
 
 ## 🚀 About Me
 Hello, my name is Bhargava Krishna. I'm a Mechanical Engineer and the founder of BK Enginering.

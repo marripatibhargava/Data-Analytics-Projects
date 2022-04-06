@@ -8,8 +8,9 @@ We provide training in engineering skills (IT & non-IT).
 
 Educator | Entrepreneur | Mechanical Engineer | Consultant
 
-Linkedin: https://www.linkedin.com/in/bhargava-krishna-marripati/
-Tableau Public: https://public.tableau.com/app/profile/bhargava.krishna.marripati#!/
+Linkedin: https://www.linkedin.com/in/bhargava-krishna-marripati/                                 
+Tableau Public: https://public.tableau.com/app/profile/bhargava.krishna.marripati#!/                  
+HackerRank: https://www.hackerrank.com/marripatibharga1
 
 
 

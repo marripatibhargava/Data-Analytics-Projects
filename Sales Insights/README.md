@@ -1,5 +1,8 @@
 ## Sales Insights Data Analysis Project (Tableau & Power BI)
 
+![Sales Insight](https://user-images.githubusercontent.com/24194959/177701009-8c56fd09-ed6a-46d7-9c73-58da5f7cb137.png)
+
+
 ### Instructions to setup mysql on your local computer
 
 1. Follow step in this video to install mysql on your local computer

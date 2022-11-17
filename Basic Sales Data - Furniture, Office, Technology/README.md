@@ -1,4 +1,4 @@
-# Data-Analytics-Projects
+# Sales -  Furniture, Office, Technology
 This contains the projects related to Data Analytics, Buisness Analytics, Visualization etc
 These are practice projects from multiple sources available for free online.
 
